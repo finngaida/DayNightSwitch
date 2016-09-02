@@ -12,6 +12,7 @@
 		C5951AE11D7A0B3D0088641B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5951ADF1D7A0B3D0088641B /* Main.storyboard */; };
 		C5951AE31D7A0B3D0088641B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5951AE21D7A0B3D0088641B /* Assets.xcassets */; };
 		C5951AE61D7A0B3D0088641B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5951AE41D7A0B3D0088641B /* LaunchScreen.storyboard */; };
+		C5951AEE1D7A0B890088641B /* .. in Sources */ = {isa = PBXBuildFile; fileRef = C5951AED1D7A0B890088641B /* .. */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		C5951AE21D7A0B3D0088641B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5951AE51D7A0B3D0088641B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5951AE71D7A0B3D0088641B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5951AED1D7A0B890088641B /* .. */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = folder; path = ..; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				C5951ADB1D7A0B3D0088641B /* AppDelegate.swift */,
 				C5951ADD1D7A0B3D0088641B /* ViewController.swift */,
+				C5951AED1D7A0B890088641B /* .. */,
 				C5951ADF1D7A0B3D0088641B /* Main.storyboard */,
 				C5951AE21D7A0B3D0088641B /* Assets.xcassets */,
 				C5951AE41D7A0B3D0088641B /* LaunchScreen.storyboard */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5951AEE1D7A0B890088641B /* .. in Sources */,
 				C5951ADE1D7A0B3D0088641B /* ViewController.swift in Sources */,
 				C5951ADC1D7A0B3D0088641B /* AppDelegate.swift in Sources */,
 			);
@@ -286,6 +290,7 @@
 				C5951AEC1D7A0B3D0088641B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
