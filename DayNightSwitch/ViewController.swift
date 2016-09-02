@@ -13,6 +13,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let dayNightSwitch = DayNightSwitch(center: self.view.center)
+        dayNightSwitch.changeAction = { on in
+            print("The switch is now " + (on ? "on" : "off"))
+        }
+        self.view.addSubview(dayNightSwitch)
     }
 
     override func didReceiveMemoryWarning() {

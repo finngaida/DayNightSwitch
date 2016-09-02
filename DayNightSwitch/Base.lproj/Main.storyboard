@@ -16,24 +16,7 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JfP-5J-SPS" customClass="DayNightSwitch" customModule="DayNightSwitch" customModuleProvider="target">
-                                <rect key="frame" x="274" y="285" width="52" height="30"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="52" id="qvp-Al-QBa"/>
-                                    <constraint firstAttribute="height" constant="30" id="z79-AK-tjl"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="on" value="NO"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="JfP-5J-SPS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S0Q-9s-HDz"/>
-                            <constraint firstItem="JfP-5J-SPS" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hN4-ML-s6h"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
