@@ -6,11 +6,13 @@ So I came across this awesome, kinda skeuomorphic-ish custom switch design on Dr
 1. Clone or download the repo, drop the `DayNightSwitch.swift` file in your project and 
 2. Either drop a `UIView` into your storyboard and set its class to `DayNightButton` or create an instance of the switch like so:
 
+```
     let dayNightSwitch = DayNightSwitch(center: self.view.center)
     dayNightSwitch.changeAction = { on in
         print("The switch is now " + (on ? "on" : "off"))
     }
     self.view.addSubview(dayNightSwitch)
+```
 
 ## License
 MIT.
