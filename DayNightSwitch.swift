@@ -39,6 +39,9 @@ import UIKit
                 }
                 
                 }, completion: nil)
+            
+            let cache = self.expanded
+            self.expanded = cache
         }
     }
     
