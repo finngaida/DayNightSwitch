@@ -7,80 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C5951ADC1D7A0B3D0088641B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5951ADB1D7A0B3D0088641B /* AppDelegate.swift */; };
-		C5951ADE1D7A0B3D0088641B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5951ADD1D7A0B3D0088641B /* ViewController.swift */; };
-		C5951AE11D7A0B3D0088641B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5951ADF1D7A0B3D0088641B /* Main.storyboard */; };
-		C5951AE31D7A0B3D0088641B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5951AE21D7A0B3D0088641B /* Assets.xcassets */; };
-		C5951AE61D7A0B3D0088641B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5951AE41D7A0B3D0088641B /* LaunchScreen.storyboard */; };
-		C5B368FF1D7AC7720027DC13 /* DayNightSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B368FE1D7AC7720027DC13 /* DayNightSwitch.m */; };
-		C5B369001D7AEA8D0027DC13 /* DayNightSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B368FA1D7A39140027DC13 /* DayNightSwitch.swift */; };
+		331465F81739D681069974D0 /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C969B1D53598DDDC979B6AF /* Pods_Example.framework */; };
+		977C118C2728EC82C03BE14B /* Pods_DayNightSwitch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59672E3C4ED1284AADCF4F81 /* Pods_DayNightSwitch.framework */; };
+		C507DD771D7C273D00789EBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C507DD761D7C273D00789EBD /* AppDelegate.swift */; };
+		C507DD791D7C273D00789EBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C507DD781D7C273D00789EBD /* ViewController.swift */; };
+		C507DD7C1D7C273D00789EBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C507DD7A1D7C273D00789EBD /* Main.storyboard */; };
+		C507DD7E1D7C273D00789EBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C507DD7D1D7C273D00789EBD /* Assets.xcassets */; };
+		C507DD811D7C273D00789EBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C507DD7F1D7C273D00789EBD /* LaunchScreen.storyboard */; };
+		C507DD861D7C283200789EBD /* DayNightSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B368FA1D7A39140027DC13 /* DayNightSwitch.swift */; };
 		C5B369091D7C0D020027DC13 /* DayNightSwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = C5B369081D7C0D020027DC13 /* DayNightSwitch.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C5B3690D1D7C0D020027DC13 /* DayNightSwitch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5B369061D7C0D020027DC13 /* DayNightSwitch.framework */; };
-		C5B3690E1D7C0D020027DC13 /* DayNightSwitch.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C5B369061D7C0D020027DC13 /* DayNightSwitch.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C5B3691B1D7C0D160027DC13 /* DayNightSwitch-ObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = C5B3691A1D7C0D160027DC13 /* DayNightSwitch-ObjC.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C5B3691F1D7C0D160027DC13 /* DayNightSwitchObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5B369181D7C0D160027DC13 /* DayNightSwitchObjC.framework */; };
-		C5B369201D7C0D160027DC13 /* DayNightSwitchObjC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C5B369181D7C0D160027DC13 /* DayNightSwitchObjC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C5B3697B1D7C26610027DC13 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5B3697A1D7C26610027DC13 /* Info.plist */; };
+		C93DB0D1378F2B127498D488 /* Pods_DayNightSwitchObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B506D6500690E72654CC577A /* Pods_DayNightSwitchObjC.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		C5B3690B1D7C0D020027DC13 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C5951AD01D7A0B3D0088641B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C5B369051D7C0D020027DC13;
-			remoteInfo = DayNightSwitch;
-		};
-		C5B3691D1D7C0D160027DC13 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C5951AD01D7A0B3D0088641B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C5B369171D7C0D160027DC13;
-			remoteInfo = "DayNightSwitch-ObjC";
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		C5B369121D7C0D020027DC13 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				C5B369201D7C0D160027DC13 /* DayNightSwitchObjC.framework in Embed Frameworks */,
-				C5B3690E1D7C0D020027DC13 /* DayNightSwitch.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		C5951AD81D7A0B3D0088641B /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C5951ADB1D7A0B3D0088641B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C5951ADD1D7A0B3D0088641B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		C5951AE01D7A0B3D0088641B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C5951AE21D7A0B3D0088641B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C5951AE51D7A0B3D0088641B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C5951AE71D7A0B3D0088641B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		182FCE47E6371AFBCEE2C430 /* Pods-DayNightSwitchObjC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DayNightSwitchObjC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DayNightSwitchObjC/Pods-DayNightSwitchObjC.debug.xcconfig"; sourceTree = "<group>"; };
+		222E7857FFDCE2BD8C8FFF62 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
+		3BF3BA2349D157D40A586045 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		59672E3C4ED1284AADCF4F81 /* Pods_DayNightSwitch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DayNightSwitch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77E3BF549B2983C5FDDB221B /* Pods-DayNightSwitch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DayNightSwitch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DayNightSwitch/Pods-DayNightSwitch.debug.xcconfig"; sourceTree = "<group>"; };
+		9C969B1D53598DDDC979B6AF /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3E3420D677C325811D3E588 /* Pods-DayNightSwitch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DayNightSwitch.release.xcconfig"; path = "Pods/Target Support Files/Pods-DayNightSwitch/Pods-DayNightSwitch.release.xcconfig"; sourceTree = "<group>"; };
+		B506D6500690E72654CC577A /* Pods_DayNightSwitchObjC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DayNightSwitchObjC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C507DD741D7C273D00789EBD /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C507DD761D7C273D00789EBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C507DD781D7C273D00789EBD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C507DD7B1D7C273D00789EBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C507DD7D1D7C273D00789EBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C507DD801D7C273D00789EBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C507DD821D7C273D00789EBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5B368FA1D7A39140027DC13 /* DayNightSwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayNightSwitch.swift; sourceTree = SOURCE_ROOT; };
-		C5B368FC1D7AC7720027DC13 /* DayNightSwitch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DayNightSwitch-Bridging-Header.h"; sourceTree = "<group>"; };
 		C5B368FD1D7AC7720027DC13 /* DayNightSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DayNightSwitch.h; path = ../DayNightSwitch.h; sourceTree = "<group>"; };
 		C5B368FE1D7AC7720027DC13 /* DayNightSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DayNightSwitch.m; path = ../DayNightSwitch.m; sourceTree = "<group>"; };
 		C5B369061D7C0D020027DC13 /* DayNightSwitch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DayNightSwitch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5B369081D7C0D020027DC13 /* DayNightSwitch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DayNightSwitch.h; sourceTree = "<group>"; };
-		C5B3690A1D7C0D020027DC13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5B369181D7C0D160027DC13 /* DayNightSwitchObjC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DayNightSwitchObjC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5B3691A1D7C0D160027DC13 /* DayNightSwitch-ObjC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DayNightSwitch-ObjC.h"; sourceTree = "<group>"; };
-		C5B3691C1D7C0D160027DC13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5B3691C1D7C0D160027DC13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = "DayNightSwitch-ObjC/Info.plist"; sourceTree = SOURCE_ROOT; };
+		C5B3697A1D7C26610027DC13 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE4536BE63D8056DC0CAD3D1 /* Pods-DayNightSwitchObjC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DayNightSwitchObjC.release.xcconfig"; path = "Pods/Target Support Files/Pods-DayNightSwitchObjC/Pods-DayNightSwitchObjC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C5951AD51D7A0B3D0088641B /* Frameworks */ = {
+		C507DD711D7C273D00789EBD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5B3691F1D7C0D160027DC13 /* DayNightSwitchObjC.framework in Frameworks */,
-				C5B3690D1D7C0D020027DC13 /* DayNightSwitch.framework in Frameworks */,
+				331465F81739D681069974D0 /* Pods_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				977C118C2728EC82C03BE14B /* Pods_DayNightSwitch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,44 +70,69 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C93DB0D1378F2B127498D488 /* Pods_DayNightSwitchObjC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09FA1922B5504A841A659335 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				77E3BF549B2983C5FDDB221B /* Pods-DayNightSwitch.debug.xcconfig */,
+				B3E3420D677C325811D3E588 /* Pods-DayNightSwitch.release.xcconfig */,
+				182FCE47E6371AFBCEE2C430 /* Pods-DayNightSwitchObjC.debug.xcconfig */,
+				CE4536BE63D8056DC0CAD3D1 /* Pods-DayNightSwitchObjC.release.xcconfig */,
+				3BF3BA2349D157D40A586045 /* Pods-Example.debug.xcconfig */,
+				222E7857FFDCE2BD8C8FFF62 /* Pods-Example.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		37215288E818E80E1A4266E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59672E3C4ED1284AADCF4F81 /* Pods_DayNightSwitch.framework */,
+				B506D6500690E72654CC577A /* Pods_DayNightSwitchObjC.framework */,
+				9C969B1D53598DDDC979B6AF /* Pods_Example.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C507DD751D7C273D00789EBD /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				C507DD761D7C273D00789EBD /* AppDelegate.swift */,
+				C507DD781D7C273D00789EBD /* ViewController.swift */,
+				C507DD7A1D7C273D00789EBD /* Main.storyboard */,
+				C507DD7D1D7C273D00789EBD /* Assets.xcassets */,
+				C507DD7F1D7C273D00789EBD /* LaunchScreen.storyboard */,
+				C507DD821D7C273D00789EBD /* Info.plist */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
 		C5951ACF1D7A0B3D0088641B = {
 			isa = PBXGroup;
 			children = (
-				C5951ADA1D7A0B3D0088641B /* DayNightSwitch */,
 				C5B369071D7C0D020027DC13 /* DayNightSwitch */,
 				C5B369191D7C0D160027DC13 /* DayNightSwitch-ObjC */,
+				C507DD751D7C273D00789EBD /* Example */,
 				C5951AD91D7A0B3D0088641B /* Products */,
+				09FA1922B5504A841A659335 /* Pods */,
+				37215288E818E80E1A4266E8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		C5951AD91D7A0B3D0088641B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C5951AD81D7A0B3D0088641B /* Example.app */,
 				C5B369061D7C0D020027DC13 /* DayNightSwitch.framework */,
 				C5B369181D7C0D160027DC13 /* DayNightSwitchObjC.framework */,
+				C507DD741D7C273D00789EBD /* Example.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		C5951ADA1D7A0B3D0088641B /* DayNightSwitch */ = {
-			isa = PBXGroup;
-			children = (
-				C5951ADB1D7A0B3D0088641B /* AppDelegate.swift */,
-				C5951ADD1D7A0B3D0088641B /* ViewController.swift */,
-				C5951ADF1D7A0B3D0088641B /* Main.storyboard */,
-				C5951AE21D7A0B3D0088641B /* Assets.xcassets */,
-				C5951AE41D7A0B3D0088641B /* LaunchScreen.storyboard */,
-				C5951AE71D7A0B3D0088641B /* Info.plist */,
-				C5B368FC1D7AC7720027DC13 /* DayNightSwitch-Bridging-Header.h */,
-			);
-			path = DayNightSwitch;
 			sourceTree = "<group>";
 		};
 		C5B369071D7C0D020027DC13 /* DayNightSwitch */ = {
@@ -140,7 +140,7 @@
 			children = (
 				C5B369081D7C0D020027DC13 /* DayNightSwitch.h */,
 				C5B368FA1D7A39140027DC13 /* DayNightSwitch.swift */,
-				C5B3690A1D7C0D020027DC13 /* Info.plist */,
+				C5B3697A1D7C26610027DC13 /* Info.plist */,
 			);
 			path = DayNightSwitch;
 			sourceTree = "<group>";
@@ -178,34 +178,36 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		C5951AD71D7A0B3D0088641B /* Example */ = {
+		C507DD731D7C273D00789EBD /* Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C5951AEA1D7A0B3D0088641B /* Build configuration list for PBXNativeTarget "Example" */;
+			buildConfigurationList = C507DD831D7C273D00789EBD /* Build configuration list for PBXNativeTarget "Example" */;
 			buildPhases = (
-				C5951AD41D7A0B3D0088641B /* Sources */,
-				C5951AD51D7A0B3D0088641B /* Frameworks */,
-				C5951AD61D7A0B3D0088641B /* Resources */,
-				C5B369121D7C0D020027DC13 /* Embed Frameworks */,
+				D5C63B4A4CA815537A3A2C3B /* 📦 Check Pods Manifest.lock */,
+				C507DD701D7C273D00789EBD /* Sources */,
+				C507DD711D7C273D00789EBD /* Frameworks */,
+				C507DD721D7C273D00789EBD /* Resources */,
+				E4459CC3A37C79A142802C55 /* 📦 Embed Pods Frameworks */,
+				42661F410C8CF4FDD12235FC /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C5B3690C1D7C0D020027DC13 /* PBXTargetDependency */,
-				C5B3691E1D7C0D160027DC13 /* PBXTargetDependency */,
 			);
 			name = Example;
-			productName = DayNightSwitch;
-			productReference = C5951AD81D7A0B3D0088641B /* Example.app */;
+			productName = Example;
+			productReference = C507DD741D7C273D00789EBD /* Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 		C5B369051D7C0D020027DC13 /* DayNightSwitch */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C5B3690F1D7C0D020027DC13 /* Build configuration list for PBXNativeTarget "DayNightSwitch" */;
 			buildPhases = (
+				C8D74CA09BF14304207AC64C /* 📦 Check Pods Manifest.lock */,
 				C5B369011D7C0D020027DC13 /* Sources */,
 				C5B369021D7C0D020027DC13 /* Frameworks */,
 				C5B369031D7C0D020027DC13 /* Headers */,
 				C5B369041D7C0D020027DC13 /* Resources */,
+				50C6A5EA2055A23F770CF99F /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -220,10 +222,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C5B369211D7C0D160027DC13 /* Build configuration list for PBXNativeTarget "DayNightSwitchObjC" */;
 			buildPhases = (
+				9EDC4A48FFD97467AB1643A6 /* 📦 Check Pods Manifest.lock */,
 				C5B369131D7C0D160027DC13 /* Sources */,
 				C5B369141D7C0D160027DC13 /* Frameworks */,
 				C5B369151D7C0D160027DC13 /* Headers */,
 				C5B369161D7C0D160027DC13 /* Resources */,
+				EA34ABC4690DBA27FE5CDBD1 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,7 +248,7 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Finn Gaida";
 				TargetAttributes = {
-					C5951AD71D7A0B3D0088641B = {
+					C507DD731D7C273D00789EBD = {
 						CreatedOnToolsVersion = 7.3;
 					};
 					C5B369051D7C0D020027DC13 = {
@@ -268,21 +272,21 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C5951AD71D7A0B3D0088641B /* Example */,
 				C5B369051D7C0D020027DC13 /* DayNightSwitch */,
 				C5B369171D7C0D160027DC13 /* DayNightSwitchObjC */,
+				C507DD731D7C273D00789EBD /* Example */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		C5951AD61D7A0B3D0088641B /* Resources */ = {
+		C507DD721D7C273D00789EBD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5951AE61D7A0B3D0088641B /* LaunchScreen.storyboard in Resources */,
-				C5951AE31D7A0B3D0088641B /* Assets.xcassets in Resources */,
-				C5951AE11D7A0B3D0088641B /* Main.storyboard in Resources */,
+				C507DD811D7C273D00789EBD /* LaunchScreen.storyboard in Resources */,
+				C507DD7E1D7C273D00789EBD /* Assets.xcassets in Resources */,
+				C507DD7C1D7C273D00789EBD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +294,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5B3697B1D7C26610027DC13 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,15 +307,122 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		42661F410C8CF4FDD12235FC /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Example/Pods-Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50C6A5EA2055A23F770CF99F /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DayNightSwitch/Pods-DayNightSwitch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EDC4A48FFD97467AB1643A6 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C8D74CA09BF14304207AC64C /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D5C63B4A4CA815537A3A2C3B /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E4459CC3A37C79A142802C55 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Example/Pods-Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA34ABC4690DBA27FE5CDBD1 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DayNightSwitchObjC/Pods-DayNightSwitchObjC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		C5951AD41D7A0B3D0088641B /* Sources */ = {
+		C507DD701D7C273D00789EBD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5B368FF1D7AC7720027DC13 /* DayNightSwitch.m in Sources */,
-				C5B369001D7AEA8D0027DC13 /* DayNightSwitch.swift in Sources */,
-				C5951ADE1D7A0B3D0088641B /* ViewController.swift in Sources */,
-				C5951ADC1D7A0B3D0088641B /* AppDelegate.swift in Sources */,
+				C507DD861D7C283200789EBD /* DayNightSwitch.swift in Sources */,
+				C507DD791D7C273D00789EBD /* ViewController.swift in Sources */,
+				C507DD771D7C273D00789EBD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,32 +442,19 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		C5B3690C1D7C0D020027DC13 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C5B369051D7C0D020027DC13 /* DayNightSwitch */;
-			targetProxy = C5B3690B1D7C0D020027DC13 /* PBXContainerItemProxy */;
-		};
-		C5B3691E1D7C0D160027DC13 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C5B369171D7C0D160027DC13 /* DayNightSwitchObjC */;
-			targetProxy = C5B3691D1D7C0D160027DC13 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
-		C5951ADF1D7A0B3D0088641B /* Main.storyboard */ = {
+		C507DD7A1D7C273D00789EBD /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C5951AE01D7A0B3D0088641B /* Base */,
+				C507DD7B1D7C273D00789EBD /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		C5951AE41D7A0B3D0088641B /* LaunchScreen.storyboard */ = {
+		C507DD7F1D7C273D00789EBD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C5951AE51D7A0B3D0088641B /* Base */,
+				C507DD801D7C273D00789EBD /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -363,6 +462,30 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		C507DD841D7C273D00789EBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BF3BA2349D157D40A586045 /* Pods-Example.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Example/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.finngaida.Example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C507DD851D7C273D00789EBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 222E7857FFDCE2BD8C8FFF62 /* Pods-Example.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Example/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.finngaida.Example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		C5951AE81D7A0B3D0088641B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -446,35 +569,9 @@
 			};
 			name = Release;
 		};
-		C5951AEB1D7A0B3D0088641B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
-				INFOPLIST_FILE = DayNightSwitch/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = de.finngaida.DayNightSwitchExample;
-				PRODUCT_NAME = Example;
-				SWIFT_OBJC_BRIDGING_HEADER = "DayNightSwitch/DayNightSwitch-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		C5951AEC1D7A0B3D0088641B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
-				INFOPLIST_FILE = DayNightSwitch/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = de.finngaida.DayNightSwitchExample;
-				PRODUCT_NAME = Example;
-				SWIFT_OBJC_BRIDGING_HEADER = "DayNightSwitch/DayNightSwitch-Bridging-Header.h";
-			};
-			name = Release;
-		};
 		C5B369101D7C0D020027DC13 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77E3BF549B2983C5FDDB221B /* Pods-DayNightSwitch.debug.xcconfig */;
 			buildSettings = {
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -495,6 +592,7 @@
 		};
 		C5B369111D7C0D020027DC13 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3E3420D677C325811D3E588 /* Pods-DayNightSwitch.release.xcconfig */;
 			buildSettings = {
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -515,6 +613,7 @@
 		};
 		C5B369221D7C0D160027DC13 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 182FCE47E6371AFBCEE2C430 /* Pods-DayNightSwitchObjC.debug.xcconfig */;
 			buildSettings = {
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -535,6 +634,7 @@
 		};
 		C5B369231D7C0D160027DC13 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE4536BE63D8056DC0CAD3D1 /* Pods-DayNightSwitchObjC.release.xcconfig */;
 			buildSettings = {
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -556,20 +656,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C507DD831D7C273D00789EBD /* Build configuration list for PBXNativeTarget "Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C507DD841D7C273D00789EBD /* Debug */,
+				C507DD851D7C273D00789EBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C5951AD31D7A0B3D0088641B /* Build configuration list for PBXProject "Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C5951AE81D7A0B3D0088641B /* Debug */,
 				C5951AE91D7A0B3D0088641B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C5951AEA1D7A0B3D0088641B /* Build configuration list for PBXNativeTarget "Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C5951AEB1D7A0B3D0088641B /* Debug */,
-				C5951AEC1D7A0B3D0088641B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -581,6 +681,7 @@
 				C5B369111D7C0D020027DC13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C5B369211D7C0D160027DC13 /* Build configuration list for PBXNativeTarget "DayNightSwitchObjC" */ = {
 			isa = XCConfigurationList;
@@ -589,6 +690,7 @@
 				C5B369231D7C0D160027DC13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

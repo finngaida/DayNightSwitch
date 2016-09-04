@@ -1,0 +1,6 @@
+framework module Pods_DayNightSwitch {
+  umbrella header "Pods-DayNightSwitch-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,21 @@
+PODS:
+  - DayNightSwitch (0.0.1)
+
+DEPENDENCIES:
+  - DayNightSwitch (from `https://github.com/finngaida/DayNightSwitch.git`)
+
+EXTERNAL SOURCES:
+  DayNightSwitch:
+    :git: https://github.com/finngaida/DayNightSwitch.git
+
+CHECKOUT OPTIONS:
+  DayNightSwitch:
+    :commit: f377cca996594a477498cfcf1c23166bce9cce4c
+    :git: https://github.com/finngaida/DayNightSwitch.git
+
+SPEC CHECKSUMS:
+  DayNightSwitch: a5cfb564bf796a0383cc95700ae37b7b43bc1f88
+
+PODFILE CHECKSUM: e9bb941636ca2549b1f122607ffeeb176a1b5695
+
+COCOAPODS: 1.0.0.beta.6

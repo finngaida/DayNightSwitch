@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  DayNightSwitch
+//  Example
 //
-//  Created by Finn Gaida on 02.09.16.
+//  Created by Finn Gaida on 04.09.16.
 //  Copyright © 2016 Finn Gaida. All rights reserved.
 //
 

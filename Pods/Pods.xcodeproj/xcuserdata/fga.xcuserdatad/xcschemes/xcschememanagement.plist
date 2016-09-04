@@ -4,45 +4,45 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>DayNightSwitch.xcscheme_^#shared#^_</key>
+		<key>DayNightSwitch.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>DayNightSwitchObjC.xcscheme_^#shared#^_</key>
+		<key>Pods-DayNightSwitch.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>Example.xcscheme</key>
+		<key>Pods-DayNightSwitchObjC.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Example.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>C507DD731D7C273D00789EBD</key>
+		<key>6FE88776DE916D5D46090AC0B247DE66</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C5951AD71D7A0B3D0088641B</key>
+		<key>91C4324B9C4D7B82F3D7B56A2EAF88CA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C5B369051D7C0D020027DC13</key>
+		<key>A386F3D09F4DD71138BF5DB0E519A46D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C5B369171D7C0D160027DC13</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C5B369671D7C242B0027DC13</key>
+		<key>B31A4CBCCFA603A6BB6E167DE4F8A5D0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
