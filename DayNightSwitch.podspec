@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "DayNightSwitch"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "Add a more natural design to your switches, Moon / Sun for off / on."
 
   # This description is used to generate tags and improve search results.
@@ -105,7 +105,7 @@ I saw a [Dribbble Shot](https://dribbble.com/shots/1909289-Day-Night-Toggle-Butt
   #  non-essential files like tests, examples and documentation.
   #
 
-  s.resource  = "DayNightSwitch/Assets.xcassets/cloud.imageset/cloud@3x.png"
+  s.resource  = "Example/Assets.xcassets/cloud.imageset/cloud@3x.png"
   # s.resources = "Resources/*.png"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
