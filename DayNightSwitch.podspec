@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "DayNightSwitch"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "Add a more natural design to your switches, Moon / Sun for off / on."
 
   # This description is used to generate tags and improve search results.
