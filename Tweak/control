@@ -1,0 +1,9 @@
+Package: de.finngaida.daynightswitch
+Name: DayNightSwitch
+Depends: mobilesubstrate
+Version: 1.0
+Architecture: iphoneos-arm
+Description: Add some style to your switches
+Maintainer: Finn Gaida
+Author: Finn Gaida
+Section: Tweaks
