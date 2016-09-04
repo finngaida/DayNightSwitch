@@ -141,7 +141,7 @@ import UIKit
 }
 
 /// A switch inspired by [Dribbble](https://dribbble.com/shots/1909289-Day-Night-Toggle-Button-GIF)
-@IBDesignable class DayNightSwitch: UIView {
+@IBDesignable public class DayNightSwitch: UIView {
     
     // some constant colors
     let offColor = UIColor(red: 0.235, green: 0.255, blue: 0.271, alpha: 1)
@@ -150,24 +150,24 @@ import UIKit
     let onBorderColor = UIColor(red: 0.533, green: 0.769, blue: 0.843, alpha: 1)
 
     /// Width of the darker border of the background
-    var borderWidth: CGFloat {
+    public var borderWidth: CGFloat {
         get {
             return self.frame.height / 7
         }
     }
     
     /// Distance between border and knob
-    var knobMargin: CGFloat {
+    public var knobMargin: CGFloat {
         get {
             return self.frame.height / 10
         }
     }
     
     /// Called as soon as the value changes (probably because the user tapped it)
-    var changeAction: ((Bool) -> ())?
+    public var changeAction: ((Bool) -> ())?
     
     /// Determines the state of the button, animates changes
-    @IBInspectable var on: Bool = true {
+    @IBInspectable public var on: Bool = true {
         didSet {
             
             // call the action closure
@@ -244,10 +244,10 @@ import UIKit
     }
     
     /// Dark blue border layer
-    var offBorder: CAShapeLayer?
+    public var offBorder: CAShapeLayer?
     
     /// Light blue layer below the `offBorder`
-    var onBorder: CAShapeLayer?
+    public var onBorder: CAShapeLayer?
     
     /**
      Sets up the border layers
@@ -276,7 +276,7 @@ import UIKit
     }
     
     /// Small white dots on the off state background
-    var stars: [UIView]?
+    public var stars: [UIView]?
     
     /**
      Creates 7 stars with different location and size
@@ -310,7 +310,7 @@ import UIKit
     }
     
     /// Cloud image visible on top of the on state knob
-    var cloud: UIImageView?
+    public var cloud: UIImageView?
     
     /**
      Sets up the `cloud`
@@ -344,31 +344,31 @@ import UIKit
 
     /// This prevents the tap gesture recognizer from interfering the drag movement
     var dragging: Bool = false
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override public func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         dragging = true
         if let k = self.knob { k.expanded = true }
     }
     
     var moved: Bool = false
-    override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override public func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
         moved = true
         proccess(touches, withEvent: event)
     }
     
-    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override public func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
         self.proccess(touches, withEvent: event)
         if let k = self.knob { k.expanded = false }
         dragging = false
         moved = false
     }
     
-    override func touchesCancelled(touches: Set<UITouch>?, withEvent event: UIEvent?) {
+    override public func touchesCancelled(touches: Set<UITouch>?, withEvent event: UIEvent?) {
         self.touchesEnded(touches ?? Set<UITouch>(), withEvent: event)
     }
     
     
     // MARK: Initializers
-    init(center: CGPoint) {
+    public init(center: CGPoint) {
         let height: CGFloat = 30
         let width: CGFloat = height * 1.75
         super.init(frame: CGRectMake(center.x - width / 2, center.y - height / 2, width, height))
@@ -390,12 +390,12 @@ import UIKit
         self.addSubview(setupCloud())
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         commonInit()
     }
     
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         commonInit()
     }

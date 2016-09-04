@@ -4,7 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>DayNightSwitch.xcscheme</key>
+		<key>DayNightSwitch.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>DayNightSwitchObjC.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Example.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -13,6 +23,16 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>C5951AD71D7A0B3D0088641B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C5B369051D7C0D020027DC13</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C5B369171D7C0D160027DC13</key>
 		<dict>
 			<key>primary</key>
 			<true/>
