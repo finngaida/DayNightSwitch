@@ -262,7 +262,7 @@
 - (UIImageView *)setupCloud {
     
     UIImageView *v = [[UIImageView alloc] initWithFrame: CGRectMake(self.frame.size.width / 3, self.frame.size.height * 0.4, self.frame.size.width / 3, self.frame.size.width * 0.23)];
-    v.image = [UIImage imageWithContentsOfFile:@"/Library/DayNightSwitch/cloud@2x.png"];
+    v.image = [UIImage imageWithContentsOfFile:@"/Application Support/DayNightSwitch/cloud@2x.png"];
     v.transform = CGAffineTransformMakeScale(0, 0);
     
     // this should be done with UIBezierPaths...

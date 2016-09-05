@@ -4,6 +4,7 @@ Depends: mobilesubstrate
 Version: 1.0
 Architecture: iphoneos-arm
 Description: Add some style to your switches
+Depiction: https://finngaida.de/repo/depictions/de.finngaida.daynightswitch
 Maintainer: Finn Gaida
 Author: Finn Gaida
 Section: Tweaks
