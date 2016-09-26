@@ -21,4 +21,5 @@ So I came across this awesome, kinda skeuomorphic-ish custom switch design on Dr
 ```
 
 ## License
+Original credit for the design goes to [Ramakrishna](https://dribbble.com/shots/1907553-Day-Night-Toggle-Button) and for the animations to [Tsuriel](https://dribbble.com/shots/1909289-Day-Night-Toggle-Button-GIF)
 [MIT](LICENSE).
