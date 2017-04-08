@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C5B369171D7C0D160027DC13"
-               BuildableName = "DayNightSwitchObjC.framework"
-               BlueprintName = "DayNightSwitchObjC"
-               ReferencedContainer = "container:Example.xcodeproj">
+               BlueprintIdentifier = "B31A4CBCCFA603A6BB6E167DE4F8A5D0"
+               BuildableName = "Pods_Example.framework"
+               BlueprintName = "Pods-Example"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,10 +45,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C5B369171D7C0D160027DC13"
-            BuildableName = "DayNightSwitchObjC.framework"
-            BlueprintName = "DayNightSwitchObjC"
-            ReferencedContainer = "container:Example.xcodeproj">
+            BlueprintIdentifier = "B31A4CBCCFA603A6BB6E167DE4F8A5D0"
+            BuildableName = "Pods_Example.framework"
+            BlueprintName = "Pods-Example"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -63,10 +63,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C5B369171D7C0D160027DC13"
-            BuildableName = "DayNightSwitchObjC.framework"
-            BlueprintName = "DayNightSwitchObjC"
-            ReferencedContainer = "container:Example.xcodeproj">
+            BlueprintIdentifier = "B31A4CBCCFA603A6BB6E167DE4F8A5D0"
+            BuildableName = "Pods_Example.framework"
+            BlueprintName = "Pods-Example"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

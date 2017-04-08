@@ -17,7 +17,6 @@
 		C507DD861D7C283200789EBD /* DayNightSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B368FA1D7A39140027DC13 /* DayNightSwitch.swift */; };
 		C5B369091D7C0D020027DC13 /* DayNightSwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = C5B369081D7C0D020027DC13 /* DayNightSwitch.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C5B3691B1D7C0D160027DC13 /* DayNightSwitch-ObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = C5B3691A1D7C0D160027DC13 /* DayNightSwitch-ObjC.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C5B3697B1D7C26610027DC13 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5B3697A1D7C26610027DC13 /* Info.plist */; };
 		C93DB0D1378F2B127498D488 /* Pods_DayNightSwitchObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B506D6500690E72654CC577A /* Pods_DayNightSwitchObjC.framework */; };
 /* End PBXBuildFile section */
 
@@ -245,14 +244,18 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Finn Gaida";
 				TargetAttributes = {
 					C507DD731D7C273D00789EBD = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = AFNEC75D99;
+						LastSwiftMigration = 0820;
 					};
 					C5B369051D7C0D020027DC13 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = AFNEC75D99;
+						LastSwiftMigration = 0820;
 					};
 					C5B369171D7C0D160027DC13 = {
 						CreatedOnToolsVersion = 7.3;
@@ -294,7 +297,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5B3697B1D7C26610027DC13 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,11 +468,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3BF3BA2349D157D40A586045 /* Pods-Example.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AFNEC75D99;
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.finngaida.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -478,11 +483,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 222E7857FFDCE2BD8C8FFF62 /* Pods-Example.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AFNEC75D99;
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.finngaida.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -500,8 +508,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -545,8 +555,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -565,6 +577,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -573,8 +586,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 77E3BF549B2983C5FDDB221B /* Pods-DayNightSwitch.debug.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AFNEC75D99;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -584,6 +599,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = de.finngaida.DayNightSwitch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -594,8 +610,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B3E3420D677C325811D3E588 /* Pods-DayNightSwitch.release.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AFNEC75D99;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -605,6 +623,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = de.finngaida.DayNightSwitch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -615,6 +634,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 182FCE47E6371AFBCEE2C430 /* Pods-DayNightSwitchObjC.debug.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -636,6 +656,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CE4536BE63D8056DC0CAD3D1 /* Pods-DayNightSwitchObjC.release.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
