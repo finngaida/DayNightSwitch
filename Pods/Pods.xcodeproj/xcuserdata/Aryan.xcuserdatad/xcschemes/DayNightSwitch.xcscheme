@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C5B369171D7C0D160027DC13"
-               BuildableName = "DayNightSwitchObjC.framework"
-               BlueprintName = "DayNightSwitchObjC"
-               ReferencedContainer = "container:Example.xcodeproj">
+               BlueprintIdentifier = "6FE88776DE916D5D46090AC0B247DE66"
+               BuildableName = "DayNightSwitch.framework"
+               BlueprintName = "DayNightSwitch"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,10 +45,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C5B369171D7C0D160027DC13"
-            BuildableName = "DayNightSwitchObjC.framework"
-            BlueprintName = "DayNightSwitchObjC"
-            ReferencedContainer = "container:Example.xcodeproj">
+            BlueprintIdentifier = "6FE88776DE916D5D46090AC0B247DE66"
+            BuildableName = "DayNightSwitch.framework"
+            BlueprintName = "DayNightSwitch"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -63,10 +63,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C5B369171D7C0D160027DC13"
-            BuildableName = "DayNightSwitchObjC.framework"
-            BlueprintName = "DayNightSwitchObjC"
-            ReferencedContainer = "container:Example.xcodeproj">
+            BlueprintIdentifier = "6FE88776DE916D5D46090AC0B247DE66"
+            BuildableName = "DayNightSwitch.framework"
+            BlueprintName = "DayNightSwitch"
+            ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

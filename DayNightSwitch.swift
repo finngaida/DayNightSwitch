@@ -21,7 +21,7 @@ import UIKit
     @IBInspectable var on: Bool {
         didSet {
             
-            UIView.animateWithDuration(0.8, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: UIViewAnimationOptions.AllowUserInteraction, animations: { 
+            UIView.animate(withDuration: 0.8, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: UIViewAnimationOptions.allowUserInteraction, animations: { 
                 
                 self.backgroundColor = self.on ? self.onKnobColor : self.offKnobColor
                 
@@ -32,10 +32,10 @@ import UIKit
                 }, completion: nil)
             
             
-            UIView.animateWithDuration(0.4, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: UIViewAnimationOptions.AllowUserInteraction, animations: { 
+            UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: UIViewAnimationOptions.allowUserInteraction, animations: { 
                 
                 if let v = self.subview {
-                    v.transform = CGAffineTransformMakeRotation(CGFloat(M_PI) * (self.on ? 0.2 : -0.2))
+                    v.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI) * (self.on ? 0.2 : -0.2))
                 }
                 
                 }, completion: nil)
@@ -49,13 +49,13 @@ import UIKit
     var expanded: Bool {
         didSet {
             
-            guard let sup = self.superview as? DayNightSwitch, sub = self.subview, dots = self.craters else { return }
+            guard let sup = self.superview as? DayNightSwitch, let sub = self.subview, let dots = self.craters else { return }
             let newWidth = self.frame.height * (self.expanded ? 1.25 : 1)
             let x = self.on ? sup.frame.width - newWidth - sup.knobMargin : self.frame.origin.x
             
-            UIView.animateWithDuration(0.8, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: UIViewAnimationOptions.AllowUserInteraction, animations: {
-                self.frame = CGRectMake(x, self.frame.origin.y, newWidth, self.frame.height)
-                sub.center = CGPointMake(self.on ? self.frame.width - self.frame.height / 2 : self.frame.height / 2, sub.center.y)
+            UIView.animate(withDuration: 0.8, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: UIViewAnimationOptions.allowUserInteraction, animations: {
+                self.frame = CGRect(x: x, y: self.frame.origin.y, width: newWidth, height: self.frame.height)
+                sub.center = CGPoint(x: self.on ? self.frame.width - self.frame.height / 2 : self.frame.height / 2, y: sub.center.y)
                 
                 dots.forEach({ $0.alpha = self.on ? 0 : 1 })
                 
@@ -80,7 +80,7 @@ import UIKit
      */
     func setupSubview() -> UIView {
     
-        let v = UIView(frame: CGRectMake(subviewMargin, subviewMargin, self.frame.width - subviewMargin * 2, self.frame.height - subviewMargin * 2))
+        let v = UIView(frame: CGRect(x: subviewMargin, y: subviewMargin, width: self.frame.width - subviewMargin * 2, height: self.frame.height - subviewMargin * 2))
         v.layer.masksToBounds = true
         v.layer.cornerRadius = v.frame.height / 2
         v.backgroundColor = offSubviewColor
@@ -105,16 +105,16 @@ import UIKit
         let w = self.frame.width
         let h = self.frame.height
         
-        let topLeft = UIView(frame: CGRectMake(0, h * 0.1, w * 0.2, w * 0.2))
-        let topRight = UIView(frame: CGRectMake(w * 0.5, 0, w * 0.3, w * 0.3))
-        let bottom = UIView(frame: CGRectMake(w * 0.4, h * 0.5, w * 0.25, w * 0.25))
+        let topLeft = UIView(frame: CGRect(x: 0, y: h * 0.1, width: w * 0.2, height: w * 0.2))
+        let topRight = UIView(frame: CGRect(x: w * 0.5, y: 0, width: w * 0.3, height: w * 0.3))
+        let bottom = UIView(frame: CGRect(x: w * 0.4, y: h * 0.5, width: w * 0.25, height: w * 0.25))
         
         let all = [topLeft, topRight, bottom]
         all.forEach { (v) in
             v.backgroundColor = offSubviewColor
             v.layer.masksToBounds = true
             v.layer.cornerRadius = v.frame.height / 2
-            v.layer.borderColor = offKnobColor.CGColor
+            v.layer.borderColor = offKnobColor.cgColor
             v.layer.borderWidth = subviewMargin
         }
         
@@ -141,7 +141,7 @@ import UIKit
 }
 
 /// A switch inspired by [Dribbble](https://dribbble.com/shots/1909289-Day-Night-Toggle-Button-GIF)
-@IBDesignable public class DayNightSwitch: UIView {
+@IBDesignable open class DayNightSwitch: UIView {
     
     // some constant colors
     let offColor = UIColor(red: 0.235, green: 0.255, blue: 0.271, alpha: 1)
@@ -150,24 +150,24 @@ import UIKit
     let onBorderColor = UIColor(red: 0.533, green: 0.769, blue: 0.843, alpha: 1)
 
     /// Width of the darker border of the background
-    public var borderWidth: CGFloat {
+    open var borderWidth: CGFloat {
         get {
             return self.frame.height / 7
         }
     }
     
     /// Distance between border and knob
-    public var knobMargin: CGFloat {
+    open var knobMargin: CGFloat {
         get {
             return self.frame.height / 10
         }
     }
     
     /// Called as soon as the value changes (probably because the user tapped it)
-    public var changeAction: ((Bool) -> ())?
+    open var changeAction: ((Bool) -> ())?
     
     /// Determines the state of the button, animates changes
-    @IBInspectable public var on: Bool = true {
+    @IBInspectable open var on: Bool = true {
         didSet {
             
             // call the action closure
@@ -176,10 +176,10 @@ import UIKit
             if let k = self.knob {
                 k.on = on
                 
-                UIView.animateWithDuration(0.4, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: UIViewAnimationOptions.AllowUserInteraction, animations: {
+                UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: UIViewAnimationOptions.allowUserInteraction, animations: {
                     
                     let knobRadius = k.frame.width / 2
-                    k.center = CGPointMake((self.on ? self.frame.width - knobRadius - self.knobMargin : knobRadius + self.knobMargin), k.center.y)
+                    k.center = CGPoint(x: (self.on ? self.frame.width - knobRadius - self.knobMargin : knobRadius + self.knobMargin), y: k.center.y)
                     
                     self.backgroundColor = self.on ? self.onColor : self.offColor
                     
@@ -192,22 +192,22 @@ import UIKit
                     }
                     
                     if let all = self.stars {
-                        all.enumerate().forEach({ (i, star) in
+                        all.enumerated().forEach({ (i, star) in
                             star.alpha = self.on ? 0 : 1
                             
                             // let them shine
-                            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(0.1 * Double(i) * Double(NSEC_PER_SEC))), dispatch_get_main_queue(), {
-                                star.transform = CGAffineTransformMakeScale(1.5, 1.5)
+                            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + Double(Int64(0.1 * Double(i) * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC), execute: {
+                                star.transform = CGAffineTransform(scaleX: 1.5, y: 1.5)
                                 
-                                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(0.05 * Double(NSEC_PER_SEC))), dispatch_get_main_queue(), {
-                                    star.transform = CGAffineTransformIdentity
+                                DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + Double(Int64(0.05 * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC), execute: {
+                                    star.transform = CGAffineTransform.identity
                                 })
                             })
                         })
                     }
                     
                     if let c = self.cloud {
-                        c.transform = self.on ? CGAffineTransformIdentity : CGAffineTransformMakeScale(0, 0)
+                        c.transform = self.on ? CGAffineTransform.identity : CGAffineTransform(scaleX: 0, y: 0)
                     }
                     
                     }, completion: { _ in
@@ -238,16 +238,16 @@ import UIKit
     func setupKnob() -> Knob {
         
         let w = self.frame.height - knobMargin * 2
-        let v = Knob(frame: CGRectMake(knobMargin, knobMargin, w, w))
+        let v = Knob(frame: CGRect(x: knobMargin, y: knobMargin, width: w, height: w))
         knob = v
         return v
     }
     
     /// Dark blue border layer
-    public var offBorder: CAShapeLayer?
+    open var offBorder: CAShapeLayer?
     
     /// Light blue layer below the `offBorder`
-    public var onBorder: CAShapeLayer?
+    open var onBorder: CAShapeLayer?
     
     /**
      Sets up the border layers
@@ -258,17 +258,17 @@ import UIKit
         
         let b1 = CAShapeLayer()
         let b2 = CAShapeLayer()
-        let path = UIBezierPath(roundedRect: CGRectMake(0, 0, self.frame.width, self.frame.height), cornerRadius: self.frame.height / 2)
+        let path = UIBezierPath(roundedRect: CGRect(x: 0, y: 0, width: self.frame.width, height: self.frame.height), cornerRadius: self.frame.height / 2)
 
-        b1.path = path.CGPath
-        b1.fillColor = UIColor.clearColor().CGColor
-        b1.strokeColor = onBorderColor.CGColor
+        b1.path = path.cgPath
+        b1.fillColor = UIColor.clear.cgColor
+        b1.strokeColor = onBorderColor.cgColor
         b1.lineWidth = borderWidth
         onBorder = b1
         
-        b2.path = path.CGPath
-        b2.fillColor = UIColor.clearColor().CGColor
-        b2.strokeColor = offBorderColor.CGColor
+        b2.path = path.cgPath
+        b2.fillColor = UIColor.clear.cgColor
+        b2.strokeColor = offBorderColor.cgColor
         b2.lineWidth = borderWidth
         offBorder = b2
         
@@ -276,7 +276,7 @@ import UIKit
     }
     
     /// Small white dots on the off state background
-    public var stars: [UIView]?
+    open var stars: [UIView]?
     
     /**
      Creates 7 stars with different location and size
@@ -290,19 +290,19 @@ import UIKit
         let h = self.frame.height
         
         let x = h * 0.05
-        let s1 = UIView(frame: CGRectMake(w * 0.5, h * 0.16, x, x))
-        let s2 = UIView(frame: CGRectMake(w * 0.62, h * 0.33, x * 0.6, x * 0.6))
-        let s3 = UIView(frame: CGRectMake(w * 0.7, h * 0.15, x, x))
-        let s4 = UIView(frame: CGRectMake(w * 0.83, h * 0.39, x * 1.4, x * 1.4))
-        let s5 = UIView(frame: CGRectMake(w * 0.7, h * 0.54, x * 0.8, x * 0.8))
-        let s6 = UIView(frame: CGRectMake(w * 0.52, h * 0.73, x * 1.3, x * 1.3))
-        let s7 = UIView(frame: CGRectMake(w * 0.82, h * 0.66, x * 1.1, x * 1.1))
+        let s1 = UIView(frame: CGRect(x: w * 0.5, y: h * 0.16, width: x, height: x))
+        let s2 = UIView(frame: CGRect(x: w * 0.62, y: h * 0.33, width: x * 0.6, height: x * 0.6))
+        let s3 = UIView(frame: CGRect(x: w * 0.7, y: h * 0.15, width: x, height: x))
+        let s4 = UIView(frame: CGRect(x: w * 0.83, y: h * 0.39, width: x * 1.4, height: x * 1.4))
+        let s5 = UIView(frame: CGRect(x: w * 0.7, y: h * 0.54, width: x * 0.8, height: x * 0.8))
+        let s6 = UIView(frame: CGRect(x: w * 0.52, y: h * 0.73, width: x * 1.3, height: x * 1.3))
+        let s7 = UIView(frame: CGRect(x: w * 0.82, y: h * 0.66, width: x * 1.1, height: x * 1.1))
         
         let all = [s1, s2, s3, s4, s5, s6, s7]
         all.forEach { (s) in
             s.layer.masksToBounds = true
             s.layer.cornerRadius = s.frame.height / 2
-            s.backgroundColor = UIColor.whiteColor()
+            s.backgroundColor = UIColor.white
         }
         
         stars = all
@@ -310,7 +310,7 @@ import UIKit
     }
     
     /// Cloud image visible on top of the on state knob
-    public var cloud: UIImageView?
+    open var cloud: UIImageView?
     
     /**
      Sets up the `cloud`
@@ -319,10 +319,10 @@ import UIKit
      */
     func setupCloud() -> UIImageView {
         
-        let v = UIImageView(frame: CGRectMake(self.frame.width / 3, self.frame.height * 0.4, self.frame.width / 3, self.frame.width * 0.23))
+        let v = UIImageView(frame: CGRect(x: self.frame.width / 3, y: self.frame.height * 0.4, width: self.frame.width / 3, height: self.frame.width * 0.23))
         v.image = UIImage(named: "cloud")
         
-        v.transform = CGAffineTransformMakeScale(0, 0)
+        v.transform = CGAffineTransform(scaleX: 0, y: 0)
 
         // this should be done with UIBezierPaths...
         
@@ -331,9 +331,9 @@ import UIKit
     }
     
     // MARK: handling touch events
-    func proccess(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    func proccess(_ touches: Set<UITouch>, withEvent event: UIEvent?) {
         if !moved { return self.on = !self.on }
-        guard let x = touches.first?.locationInView(self).x else { return }
+        guard let x = touches.first?.location(in: self).x else { return }
         
         if x > self.frame.width / 2 && !self.on {
             self.on = true
@@ -344,26 +344,26 @@ import UIKit
 
     /// This prevents the tap gesture recognizer from interfering the drag movement
     var dragging: Bool = false
-    override public func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override open func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         dragging = true
         if let k = self.knob { k.expanded = true }
     }
     
     var moved: Bool = false
-    override public func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override open func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         moved = true
         proccess(touches, withEvent: event)
     }
     
-    override public func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override open func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.proccess(touches, withEvent: event)
         if let k = self.knob { k.expanded = false }
         dragging = false
         moved = false
     }
     
-    override public func touchesCancelled(touches: Set<UITouch>?, withEvent event: UIEvent?) {
-        self.touchesEnded(touches ?? Set<UITouch>(), withEvent: event)
+    override open func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.touchesEnded(touches , with: event)
     }
     
     
@@ -371,7 +371,7 @@ import UIKit
     public init(center: CGPoint) {
         let height: CGFloat = 30
         let width: CGFloat = height * 1.75
-        super.init(frame: CGRectMake(center.x - width / 2, center.y - height / 2, width, height))
+        super.init(frame: CGRect(x: center.x - width / 2, y: center.y - height / 2, width: width, height: height))
         commonInit()
     }
     
