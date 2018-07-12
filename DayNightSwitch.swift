@@ -21,7 +21,7 @@ import UIKit
     @IBInspectable var on: Bool {
         didSet {
             
-            UIView.animate(withDuration: 0.8, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: UIViewAnimationOptions.allowUserInteraction, animations: { 
+            UIView.animate(withDuration: 0.8, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: UIView.AnimationOptions.allowUserInteraction, animations: { 
                 
                 self.backgroundColor = self.on ? self.onKnobColor : self.offKnobColor
                 
@@ -32,7 +32,7 @@ import UIKit
                 }, completion: nil)
             
             
-            UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: UIViewAnimationOptions.allowUserInteraction, animations: { 
+            UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: UIView.AnimationOptions.allowUserInteraction, animations: { 
                 
                 if let v = self.subview {
                     v.transform = CGAffineTransform(rotationAngle: CGFloat.pi * (self.on ? 0.2 : -0.2))
@@ -53,7 +53,7 @@ import UIKit
             let newWidth = self.frame.height * (self.expanded ? 1.25 : 1)
             let x = self.on ? sup.frame.width - newWidth - sup.knobMargin : self.frame.origin.x
             
-            UIView.animate(withDuration: 0.8, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: UIViewAnimationOptions.allowUserInteraction, animations: {
+            UIView.animate(withDuration: 0.8, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: UIView.AnimationOptions.allowUserInteraction, animations: {
                 self.frame = CGRect(x: x, y: self.frame.origin.y, width: newWidth, height: self.frame.height)
                 sub.center = CGPoint(x: self.on ? self.frame.width - self.frame.height / 2 : self.frame.height / 2, y: sub.center.y)
                 
@@ -176,7 +176,7 @@ import UIKit
             if let k = self.knob {
                 k.on = on
                 
-                UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: UIViewAnimationOptions.allowUserInteraction, animations: {
+                UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: UIView.AnimationOptions.allowUserInteraction, animations: {
                     
                     let knobRadius = k.frame.width / 2
                     k.center = CGPoint(x: (self.on ? self.frame.width - knobRadius - self.knobMargin : knobRadius + self.knobMargin), y: k.center.y)

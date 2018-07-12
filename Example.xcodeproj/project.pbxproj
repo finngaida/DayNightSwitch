@@ -181,12 +181,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C507DD831D7C273D00789EBD /* Build configuration list for PBXNativeTarget "Example" */;
 			buildPhases = (
+				4889A1EF8731D00DAB7B09B4 /* [CP] Check Pods Manifest.lock */,
 				D5C63B4A4CA815537A3A2C3B /* 📦 Check Pods Manifest.lock */,
 				C507DD701D7C273D00789EBD /* Sources */,
 				C507DD711D7C273D00789EBD /* Frameworks */,
 				C507DD721D7C273D00789EBD /* Resources */,
 				E4459CC3A37C79A142802C55 /* 📦 Embed Pods Frameworks */,
-				42661F410C8CF4FDD12235FC /* 📦 Copy Pods Resources */,
+				75A46A7E98AFBF289AA6EF02 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -201,12 +202,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C5B3690F1D7C0D020027DC13 /* Build configuration list for PBXNativeTarget "DayNightSwitch" */;
 			buildPhases = (
+				6BF882817C182302EF7AEB40 /* [CP] Check Pods Manifest.lock */,
 				C8D74CA09BF14304207AC64C /* 📦 Check Pods Manifest.lock */,
 				C5B369011D7C0D020027DC13 /* Sources */,
 				C5B369021D7C0D020027DC13 /* Frameworks */,
 				C5B369031D7C0D020027DC13 /* Headers */,
 				C5B369041D7C0D020027DC13 /* Resources */,
-				50C6A5EA2055A23F770CF99F /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -221,12 +222,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C5B369211D7C0D160027DC13 /* Build configuration list for PBXNativeTarget "DayNightSwitchObjC" */;
 			buildPhases = (
+				A3C6F9E817AF3A8AD7A2E020 /* [CP] Check Pods Manifest.lock */,
 				9EDC4A48FFD97467AB1643A6 /* 📦 Check Pods Manifest.lock */,
 				C5B369131D7C0D160027DC13 /* Sources */,
 				C5B369141D7C0D160027DC13 /* Frameworks */,
 				C5B369151D7C0D160027DC13 /* Headers */,
 				C5B369161D7C0D160027DC13 /* Resources */,
-				EA34ABC4690DBA27FE5CDBD1 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,7 +251,7 @@
 					C507DD731D7C273D00789EBD = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = AFNEC75D99;
-						LastSwiftMigration = 0940;
+						LastSwiftMigration = 1000;
 					};
 					C5B369051D7C0D020027DC13 = {
 						CreatedOnToolsVersion = 7.3;
@@ -310,34 +311,58 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		42661F410C8CF4FDD12235FC /* 📦 Copy Pods Resources */ = {
+		4889A1EF8731D00DAB7B09B4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Example/Pods-Example-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		50C6A5EA2055A23F770CF99F /* 📦 Copy Pods Resources */ = {
+		6BF882817C182302EF7AEB40 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DayNightSwitch-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DayNightSwitch/Pods-DayNightSwitch-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75A46A7E98AFBF289AA6EF02 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Example/Pods-Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DayNightSwitch/DayNightSwitch.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DayNightSwitch.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Example/Pods-Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9EDC4A48FFD97467AB1643A6 /* 📦 Check Pods Manifest.lock */ = {
@@ -353,6 +378,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A3C6F9E817AF3A8AD7A2E020 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DayNightSwitchObjC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C8D74CA09BF14304207AC64C /* 📦 Check Pods Manifest.lock */ = {
@@ -398,21 +441,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Example/Pods-Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EA34ABC4690DBA27FE5CDBD1 /* 📦 Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "📦 Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DayNightSwitchObjC/Pods-DayNightSwitchObjC-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -475,8 +503,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.finngaida.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -491,8 +518,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = de.finngaida.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};

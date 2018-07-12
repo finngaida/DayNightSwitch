@@ -12,6 +12,6 @@ target 'DayNightSwitchObjC' do
 end
 
 target 'Example' do
-pod 'DayNightSwitch', :git => 'https://github.com/finngaida/DayNightSwitch.git'
+    pod 'DayNightSwitch', :git => 'https://github.com/finngaida/DayNightSwitch.git'
 end
 
