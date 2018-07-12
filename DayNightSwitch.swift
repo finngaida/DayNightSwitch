@@ -35,7 +35,7 @@ import UIKit
             UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 0, options: UIViewAnimationOptions.allowUserInteraction, animations: { 
                 
                 if let v = self.subview {
-                    v.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI) * (self.on ? 0.2 : -0.2))
+                    v.transform = CGAffineTransform(rotationAngle: CGFloat.pi * (self.on ? 0.2 : -0.2))
                 }
                 
                 }, completion: nil)
