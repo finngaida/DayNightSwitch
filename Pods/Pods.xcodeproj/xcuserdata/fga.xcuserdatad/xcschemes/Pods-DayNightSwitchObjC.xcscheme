@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1020"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5BCEF5681BCAD526B2091EF695A2987D"
+               BlueprintIdentifier = "FDDBBB8F847060DAF6C7E0CA5479F8E8"
                BuildableName = "Pods_DayNightSwitchObjC.framework"
                BlueprintName = "Pods-DayNightSwitchObjC"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5BCEF5681BCAD526B2091EF695A2987D"
+            BlueprintIdentifier = "FDDBBB8F847060DAF6C7E0CA5479F8E8"
             BuildableName = "Pods_DayNightSwitchObjC.framework"
             BlueprintName = "Pods-DayNightSwitchObjC"
             ReferencedContainer = "container:Pods.xcodeproj">
