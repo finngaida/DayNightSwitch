@@ -1,5 +1,6 @@
 ARCHS ?= arm64 arm64e
-target ?= iphone:latest:11.0
+target ?= iphone:latest:11.2
+SDKVERSION = 11.2
 CFLAGS = -Iinclude
 GO_EASY_ON_ME=1
 DEBUG=0
